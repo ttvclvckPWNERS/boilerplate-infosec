@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 
 const helmet = require('helmet');
-const app = helmet();
+app.use(helmet());
+
+module.exports = app;
 
 
 
